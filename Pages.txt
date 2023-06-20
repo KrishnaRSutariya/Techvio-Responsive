@@ -1,0 +1,10 @@
+Pages :
+
+Home
+About Us
+Contect Us
+Login Page
+Registration
+Services - Single / Details
+Blogs - Details
+404 - Errors

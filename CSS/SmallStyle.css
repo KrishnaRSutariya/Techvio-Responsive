@@ -1,0 +1,1338 @@
+/* 
+=================================================================================
+                            Font-Conectivity
+=================================================================================
+*/
+
+/* 
+font-family: 'Catamaran', sans-serif;
+font-family: 'Dosis', sans-serif; 
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Dosis:wght@300&display=swap'); */
+
+/* catamaran-100 - latin */
+@font-face {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../Fonts/catamaran-v17-latin-100.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/catamaran-v17-latin-100.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../Fonts/catamaran-v17-latin-100.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../Fonts/catamaran-v17-latin-100.woff") format("woff"),
+        /* Modern Browsers */
+        url("../Fonts/catamaran-v17-latin-100.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../Fonts/catamaran-v17-latin-100.svg#Catamaran") format("svg");
+    /* Legacy iOS */
+}
+/* catamaran-regular - latin */
+@font-face {
+    font-family: "Catamaran";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../Fonts/catamaran-v17-latin-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/catamaran-v17-latin-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../Fonts/catamaran-v17-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../Fonts/catamaran-v17-latin-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../Fonts/catamaran-v17-latin-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../Fonts/catamaran-v17-latin-regular.svg#Catamaran") format("svg");
+    /* Legacy iOS */
+}
+/* dosis-200 - latin */
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../Fonts/dosis-v27-latin-200.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/dosis-v27-latin-200.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../Fonts/dosis-v27-latin-200.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../Fonts/dosis-v27-latin-200.woff") format("woff"),
+        /* Modern Browsers */
+        url("../Fonts/dosis-v27-latin-200.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../Fonts/dosis-v27-latin-200.svg#Dosis") format("svg");
+    /* Legacy iOS */
+}
+/* dosis-300 - latin */
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../Fonts/dosis-v27-latin-300.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/dosis-v27-latin-300.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../Fonts/dosis-v27-latin-300.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../Fonts/dosis-v27-latin-300.woff") format("woff"),
+        /* Modern Browsers */
+        url("../Fonts/dosis-v27-latin-300.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../Fonts/dosis-v27-latin-300.svg#Dosis") format("svg");
+    /* Legacy iOS */
+}
+/* dosis-regular - latin */
+@font-face {
+    font-family: "Dosis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../Fonts/dosis-v27-latin-regular.eot");
+    /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/dosis-v27-latin-regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("../Fonts/dosis-v27-latin-regular.woff2") format("woff2"),
+        /* Super Modern Browsers */
+        url("../Fonts/dosis-v27-latin-regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("../Fonts/dosis-v27-latin-regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("../Fonts/dosis-v27-latin-regular.svg#Dosis") format("svg");
+    /* Legacy iOS */
+}
+/* 
+=================================================================================
+                            Common-CSS - Start
+=================================================================================
+*/
+:root {
+    --themblue: #12a5d4;
+    --themdarkblue: #3E57D0;
+    --thempurpal: #7b68ee;
+    --themfont: #140a47;
+    --themorange: #ffa500;
+    --darkorange: #ff7141;
+    --dosis: "Dosis", sans-serif;
+    --cat: "Catamaran", sans-serif;
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: "Catamaran", sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.font-dosis {
+    font-family: var(--dosis) !important;
+}
+.font-blue {
+    color: var(--themblue) !important;
+}
+.font-dark-blue {
+    color: var(--themfont) !important;
+}
+.font-purpul {
+    color: var(--thempurpal) !important;
+}
+.font-orange {
+    color: var(--themorange) !important;
+}
+.font-dark-orange {
+    color: var(--darkorange) !important;
+}
+/* 
+=================================================================================
+                            Common-CSS - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Preloader Area - Start
+=================================================================================
+*/
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: transparent;
+    top: 0;
+    left: 0;
+}
+.preloader .loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-43%);
+    transform: translateY(-43%);
+    text-align: center;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.preloader .loader .box {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    -webkit-animation: animate 0.5s linear infinite;
+    animation: animate 0.5s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+.preloader .loader .shadow {
+    width: 100%;
+    height: 5px;
+    background: #000000;
+    opacity: 0.1;
+    position: absolute;
+    top: 59px;
+    left: 0;
+    border-radius: 50%;
+    -webkit-animation: shadow 0.5s linear infinite;
+    animation: shadow 0.5s linear infinite;
+}
+.preloader::before,
+.preloader::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    z-index: -1;
+    background: #7b68ee;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+}
+.preloader::after {
+    left: auto;
+    right: 0;
+}
+.preloader.preloader-deactivate {
+    visibility: hidden;
+}
+.preloader.preloader-deactivate::after,
+.preloader.preloader-deactivate::before {
+    width: 0;
+}
+.preloader.preloader-deactivate .loader {
+    opacity: 0;
+    visibility: hidden;
+}
+@-webkit-keyframes loader {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 110%;
+    }
+}
+@keyframes loader {
+    0% {
+        left: -100px;
+    }
+    100% {
+        left: 110%;
+    }
+}
+@-webkit-keyframes animate {
+    17% {
+        border-bottom-right-radius: 3px;
+    }
+    25% {
+        -webkit-transform: translateY(9px) rotate(22.5deg);
+        transform: translateY(9px) rotate(22.5deg);
+    }
+    50% {
+        -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+        transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+    }
+    75% {
+        -webkit-transform: translateY(9px) rotate(67.5deg);
+        transform: translateY(9px) rotate(67.5deg);
+    }
+    100% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg);
+    }
+}
+@keyframes animate {
+    17% {
+        border-bottom-right-radius: 3px;
+    }
+    25% {
+        -webkit-transform: translateY(9px) rotate(22.5deg);
+        transform: translateY(9px) rotate(22.5deg);
+    }
+    50% {
+        -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+        transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+    }
+    75% {
+        -webkit-transform: translateY(9px) rotate(67.5deg);
+        transform: translateY(9px) rotate(67.5deg);
+    }
+    100% {
+        -webkit-transform: translateY(0) rotate(90deg);
+        transform: translateY(0) rotate(90deg);
+    }
+}
+@-webkit-keyframes shadow {
+    50% {
+        -webkit-transform: scale(1.2, 1);
+        transform: scale(1.2, 1);
+    }
+}
+@keyframes shadow {
+    50% {
+        -webkit-transform: scale(1.2, 1);
+        transform: scale(1.2, 1);
+    }
+}
+/* 
+=================================================================================
+                            Preloader Area - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Go Top CSS - Start
+=================================================================================
+*/
+.go-top {
+    position: fixed;
+    cursor: pointer;
+    top: 0px;
+    right: 20px;
+    color: #ffffff;
+    background-color: #7b68ee;
+    z-index: 4;
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.9s;
+    transition: 0.9s;
+    border-radius: 50%;
+}
+.go-top.active {
+    top: 98%;
+    -webkit-transform: translateY(-98%);
+    transform: translateY(-98%);
+    opacity: 1;
+    visibility: visible;
+}
+.go-top i {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.go-top i:last-child {
+    opacity: 0;
+    visibility: hidden;
+    top: 60%;
+}
+.go-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #0b0b31;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+.go-top:hover,
+.go-top:focus {
+    color: #ffffff;
+}
+.go-top:hover::before,
+.go-top:focus::before {
+    opacity: 1;
+    visibility: visible;
+}
+.go-top:hover i:first-child,
+.go-top:focus i:first-child {
+    opacity: 0;
+    top: 0;
+    visibility: hidden;
+}
+.go-top:hover i:last-child,
+.go-top:focus i:last-child {
+    opacity: 1;
+    visibility: visible;
+    top: 50%;
+}
+/* 
+=================================================================================
+                            Go Top CSS - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            IT Solutions - Start
+=================================================================================
+*/
+.ITSolutions .card,
+.ITSolutions .card .icon .fs-1 {
+    transition: 0.5s;
+}
+.ITSolutions .card:hover {
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+.ITSolutions .card:hover .icon .fs-1 {
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+/* 
+=================================================================================
+                            IT Solutions - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            OUR COMPANY - Start
+=================================================================================
+*/
+.OURCOMPANY .h1 {
+    font-size: 60px;
+    background: url("../Image/Home1/slider-2.jpg");
+    background-position: 47% 53%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.OURCOMPANY .position-absolute {
+    bottom: 10px;
+    border-bottom: 3px solid var(--themorange);
+}
+.layer-1,
+.layer-2,
+.layer-3 {
+    height: 6px;
+    background-color: #ddddff;
+}
+.layer-1::after,
+.layer-2::after,
+.layer-3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--thempurpal);
+    transition: 0.4s;
+}
+.OURCOMPANY:hover .layer-1::after {
+    width: 90%;
+    transition: 0.4s;
+}
+.OURCOMPANY:hover .layer-2::after {
+    width: 75%;
+    transition: 0.4s;
+}
+.OURCOMPANY:hover .layer-3::after {
+    width: 80%;
+    transition: 0.4s;
+}
+.OURCOMPANY .btn-learn,
+.WORKWITHUS .btn-call,
+.WORKWITHUS .btn-contact {
+    background-color: var(--thempurpal);
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.WORKWITHUS .btn-contact {
+    background-color: #fff;
+    color: #000 !important;
+    transition: 0.4s;
+}
+.WORKWITHUS .btn-contact:hover {
+    color: #fff !important;
+    transition: 0.4s;
+}
+.OURCOMPANY .btn-learn::after,
+.WORKWITHUS .btn-call::after,
+.WORKWITHUS .btn-contact::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--themfont);
+    z-index: -1;
+    transition: 0.3s;
+}
+.OURCOMPANY .btn-learn:hover::after,
+.WORKWITHUS .btn-call:hover::after,
+.WORKWITHUS .btn-contact:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+/* 
+=================================================================================
+                            OUR COMPANY - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            WHY CHOOSE - Start
+=================================================================================
+*/
+.WHYCHOOSE .card {
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+    letter-spacing: 1px;
+}
+.WHYCHOOSE .card::after {
+    content: "";
+    width: 1.3%;
+    height: 100%;
+    background-color: var(--thempurpal);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.4s;
+}
+.WHYCHOOSE .card:hover {
+    color: white;
+    transition: 0.4s;
+}
+.WHYCHOOSE .card:hover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--thempurpal);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+/* 
+=================================================================================
+                            WHY CHOOSE - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Image-Fixed - Start
+=================================================================================
+*/
+.bg-image,
+.WORKWITHUS {
+    background-image: url("../Image//Home1/asset\ 26.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+.WORKWITHUS {
+    background-size: cover;
+    background-attachment: scroll;
+}
+.bg-image::after,
+.WORKWITHUS::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* 
+=================================================================================
+                            Image-Fixed - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            TESTIMONIAL - Start
+=================================================================================
+*/
+.TESTIMONIAL .img {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(var(--thempurpal) 50%, #fff 50%);
+    transform: rotate(225deg);
+}
+.TESTIMONIAL img {
+    width: 90% !important;
+    height: 90% !important;
+    transform: rotate(135deg);
+}
+.TESTIMONIAL .owl-nav {
+    display: none !important;
+}
+.TESTIMONIAL .owl-dots .active span {
+    background: var(--thempurpal) !important;
+}
+/* 
+=================================================================================
+                            TESTIMONIAL - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            TEAM MEMBER - Start
+=================================================================================
+*/
+.TEAMMEMBER .layer {
+    opacity: 0;
+    transition: 0.5s;
+}
+.TEAMMEMBER .Hover:hover .layer {
+    opacity: 1;
+    transition: 0.5s;
+}
+.TEAMMEMBER .layer a i,
+footer a {
+    color: #fff;
+    transition: 0.4s;
+}
+.TEAMMEMBER .layer a i:hover {
+    color: var(--themorange);
+    transition: 0.4s;
+}
+/* 
+=================================================================================
+                            TEAM MEMBER - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            BLOG & ARTICLE - Start
+=================================================================================
+*/
+.BLOG a,
+.BlogRightSidebar .card a,
+.BlogRightSidebar .popular-post,
+.BlogRightSidebar .half-circle a,
+.Portfolio a,
+.BlogDetails .prev,
+.BlogDetails .next,
+.BlogDetails .btn-replay a,
+.CONTACTINFORMATION .card a,
+.Header .second li a,
+.Header .active .first li a,
+.Header .active i {
+    color: #000;
+    transition: 0.4s;
+}
+.BLOG a:hover,
+.BLOG .card:hover .text-secondary,
+.BlogRightSidebar .card a:hover,
+.BlogRightSidebar .card:hover .text-secondary,
+.BlogRightSidebar .popular-post:hover,
+.BlogRightSidebar .half-circle a:hover {
+    color: var(--thempurpal) !important;
+    transition: 0.4s;
+}
+/* 
+=================================================================================
+                            BLOG & ARTICLE - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Footer - Start
+=================================================================================
+*/
+footer .input-type {
+    width: 90%;
+    height: 75%;
+}
+footer .input-type input[type="email"]:focus {
+    outline: none;
+}
+footer .input-type input[type="submit"]:hover {
+    background-color: var(--themorange);
+    transition: .4s;
+}
+footer .social-icon a {
+    background-color: #fff;
+    color: var(--thempurpal);
+    transition: .4s;
+}
+footer .social-icon a:hover,
+footer .input-type input[type="submit"],
+.Portfolio .row .btn-portfolio .active,
+.Portfolio .row .btn-portfolio div:hover,
+.BlogRightSidebar .pagination:hover,
+.BlogRightSidebar .pagination.active {
+    background-color: var(--thempurpal);
+    color: #fff;
+    transition: .4s;
+}
+footer a:hover {
+    color: var(--thempurpal);
+    text-decoration: underline;
+    transition: .4s;
+}
+/* 
+=================================================================================
+                            Footer - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            PortFolio - Start
+=================================================================================
+*/
+.Portfolio .row .btn-portfolio div,
+.BlogRightSidebar .pagination {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    transition: .4s;
+}
+@media screen and (min-width:991px) {
+    .position-change {
+        position: absolute !important;
+    }
+}
+@media screen and (max-width:991px) {
+    .position-change {
+        position: relative !important;
+    }
+}
+.Portfolio a:hover,
+.BlogDetails .prev:hover,
+.BlogDetails .next:hover,
+.CONTACTINFORMATION .card a:hover,
+.Header .second li a:hover,
+.Header .first li a:hover,
+.Header .first li:hover>a,
+.Header .other-header a:hover {
+    color: var(--thempurpal);
+    transition: .4s;
+}
+.Portfolio .RECENTWORKS .layer {
+    transform: translateY(100px);
+    transition: .3s;
+}
+.Portfolio .RECENTWORKS:hover .layer {
+    transform: translateY(-15px);
+    transition: .3s;
+}
+.Portfolio .RECENTWORKS .layer .font-purpul {
+    transform: translateX(-100px);
+    transition: .5s;
+}
+.Portfolio .RECENTWORKS:hover .font-purpul {
+    transform: translateX(0px);
+    transition: .5s;
+}
+.Portfolio .RECENTWORKS .layer .a {
+    transform: translateX(1000px);
+    transition: .5s;
+}
+.Portfolio .RECENTWORKS:hover .a {
+    transform: translateX(0px);
+    transition: .5s;
+}
+/* 
+=================================================================================
+                            PortFolio - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            ServicesDetails - Start
+=================================================================================
+*/
+.ServicesDetails .card {
+    border-left: 3px solid var(--thempurpal) !important;
+}
+.ServicesDetails .hr::after,
+.BlogRightSidebar .hr::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 25%;
+    height: 2px;
+    background-color: #7b68ee;
+}
+.ServicesDetails .Service {
+    background-color: var(--thempurpal);
+    transition: .4s;
+}
+.ServicesDetails .Service:hover {
+    background-color: var(--themfont);
+    transition: .4s;
+}
+/* 
+=================================================================================
+                            ServicesDetails - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            ProjectDetails - Start
+=================================================================================
+*/
+#projectd .owl-dots {
+    display: none;
+}
+#projectd .owl-nav {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    opacity: 0;
+    transition: .4s;
+}
+#projectd .owl-nav .owl-prev,
+#projectd .owl-nav .owl-next {
+    margin: 0px 50px;
+    transition: .4s;
+}
+#projectd .owl-nav .owl-prev:hover,
+#projectd .owl-nav .owl-next:hover {
+    background-color: transparent !important;
+    color: var(--thempurpal);
+    transition: .4s;
+}
+#projectd:hover .owl-nav {
+    opacity: 1;
+    transition: .4s;
+}
+.ProjectDetails .icons a {
+    border: 1px dashed;
+    transition: .4s;
+}
+.ProjectDetails .icons a:hover {
+    transform: translateY(-6px);
+    transition: .4s;
+}
+.ProjectDetails .btn-work,
+.PricingPlans .btn-plan,
+.PricingPlans .btn-label,
+.Page404 .btn-home,
+.ComingSoon .icon a {
+    border: 2.5px solid var(--thempurpal);
+    background-color: var(--thempurpal) !important;
+    color: #fff;
+    transition: .4s;
+}
+.ProjectDetails .btn-work:hover,
+.PricingPlans .btn-plan:hover,
+.Page404 .btn-home:hover,
+.ComingSoon .icon a:hover {
+    background-color: transparent !important;
+    color: var(--thempurpal);
+    transition: .4s;
+}
+/* 
+=================================================================================
+                            ProjectDetails - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            PricingPlans - Start
+=================================================================================
+*/
+.PricingPlans .hr {
+    border-top: 1px dashed;
+}
+.PricingPlans .card {
+    transition: .4s;
+}
+.PricingPlans .card:hover {
+    transform: translateY(-15px);
+    transition: .4s;
+}
+.PricingPlans .btn-label {
+    transform: rotate(-90deg) translateY(-80px);
+}
+/* 
+=================================================================================
+                            PricingPlans - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            FAQ - Start
+=================================================================================
+*/
+.FAQ .active .heading {
+    background-color: var(--thempurpal);
+    color: #fff;
+}
+.FAQ .heading {
+    background-color: rgba(123, 104, 238, .1);
+    color: #000;
+    border-left: 4px solid var(--thempurpal);
+}
+.FAQ .overflow-hidden {
+    transition: 4s !important;
+}
+.FAQ .icon i {
+    cursor: pointer;
+}
+/* 
+=================================================================================
+                            FAQ - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            ComingSoon - Start
+=================================================================================
+*/
+.ComingSoon {
+    background-image: url(../Image/Pages-ComingSoon/asset\ 0.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.ComingSoon .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.ComingSoon input[type="submit"] {
+    background-color: var(--thempurpal);
+    top: 1px;
+    right: 1px;
+    scale: .9;
+}
+.ComingSoon input[type="email"]:focus {
+    outline: none !important;
+}
+.ComingSoon input[type="email"],
+.ComingSoon .outline {
+    outline: 4px solid rgba(256, 256, 256, 0.5);
+}
+/* 
+=================================================================================
+                            ComingSoon - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            BlogRightSidebar - Start
+=================================================================================
+*/
+.BlogRightSidebar form input[type="text"],
+.BlogRightSidebar form input[type="email"],
+.BlogRightSidebar form textarea {
+    border-color: var(--themfont);
+}
+.BlogRightSidebar form input[type="text"]:focus,
+.BlogRightSidebar form input[type="email"]:focus,
+.BlogRightSidebar form textarea {
+    outline-color: var(--thempurpal) !important;
+}
+.BlogRightSidebar form a {
+    background-color: var(--thempurpal);
+    color: #fff !important;
+    transition: .4s;
+}
+.BlogRightSidebar form a:hover {
+    background-color: var(--themfont);
+    transition: .4s;
+}
+.BlogRightSidebar .half-circle span {
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(var(--thempurpal) 50%, #fff 50%);
+    transform: rotate(-90deg);
+}
+.BlogRightSidebar .tags {
+    color: #000;
+    border-style: dashed !important;
+    transition: .4s;
+}
+.BlogRightSidebar .tags:hover {
+    color: #fff;
+    background-color: var(--thempurpal);
+    border-style: solid !important;
+    transition: .4s;
+}
+/* 
+=================================================================================
+                            BlogRightSidebar - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            BlogDetails - Start
+=================================================================================
+*/
+.BlogDetails .tag .bg-secondary,
+.BlogDetails .share .bg-secondary {
+    transition: .4s;
+}
+.BlogDetails .share .bg-secondary,
+.Header .home-2 .btn-contact-us a:hover {
+    color: var(--thempurpal);
+}
+.BlogDetails .tag .bg-secondary:hover,
+.BlogDetails .share .bg-secondary:hover {
+    background-color: var(--thempurpal) !important;
+    color: #fff !important;
+    transition: .4s;
+}
+.BlogDetails .prev .fw-bold,
+.BlogDetails .next .fw-bold {
+    transition: .4s;
+}
+.BlogDetails .prev:hover .fw-bold {
+    transform: translateX(-7px);
+    transition: .4s;
+}
+.BlogDetails .next:hover .fw-bold {
+    transform: translateX(7px);
+    transition: .4s;
+}
+.BlogDetails .btn-replay a:hover {
+    background-color: var(--thempurpal);
+    color: #fff;
+    transition: .4s;
+}
+.BlogDetails #form-submit {
+    background-color: var(--thempurpal);
+    border-color: var(--thempurpal) !important;
+    transition: .4s;
+}
+.BlogDetails #form-submit:hover {
+    background-color: var(--themfont);
+    border-color: var(--themfont) !important;
+    transition: .4s;
+}
+/* 
+=================================================================================
+                            BlogDetails - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            CONTACTINFORMATION - Start
+=================================================================================
+*/
+.CONTACTINFORMATION .card {
+    border-top: 3px solid var(--thempurpal);
+}
+/* 
+=================================================================================
+                            CONTACTINFORMATION - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            CONTACTUS - Start
+=================================================================================
+*/
+.CONTACTUS .btn-send {
+    background-color: var(--thempurpal);
+    transition: .4s;
+}
+.CONTACTUS .btn-send:hover {
+    background-color: var(--themfont);
+    transition: .4s;
+}
+.CONTACTUS input[type="text"],
+.CONTACTUS input[type="email"],
+.CONTACTUS textarea {
+    border-left: 3px solid var(--thempurpal) !important;
+}
+.CONTACTUS input[type="text"]:focus,
+.CONTACTUS input[type="email"]:focus,
+.CONTACTUS textarea:focus {
+    outline: none !important;
+}
+/* 
+=================================================================================
+                            CONTACTUS - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Map - Start
+=================================================================================
+*/
+.google-map iframe {
+    height: 70vh;
+}
+/* 
+=================================================================================
+                            Map - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Home - 1 - Header - Start
+=================================================================================
+*/
+.Header .btn-contact a {
+    background-color: var(--thempurpal);
+    position: relative;
+    z-index: 1;
+}
+.Header .btn-contact a::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--themdarkblue);
+    z-index: -1;
+    transition: .4s;
+}
+.Header .btn-contact a:hover::after,
+.Header .home-2 .btn-services a:hover::after,
+.Header .home-2 .btn-contact-us a:hover::after {
+    width: 100%;
+    transition: .4s;
+}
+.Header .first li a,
+.Header i,
+.Header .home-2 .btn-services a:hover {
+    color: #fff;
+}
+.Header .active {
+    background-color: #fff;
+}
+@media screen and (max-width:991px) {
+    .Header .position-change {
+        position: relative;
+    }
+    .Header .second li {
+        display: none;
+    }
+    .Header .first li a,
+    .Header .first li i {
+        background-color: #fff;
+        color: #000;
+    }
+    .Header .first li:hover i {
+        color: var(--thempurpal);
+        transition: .4s;
+    }
+    .Header #menu {
+        background-color: #fff;
+        max-height: 80vh;
+        overflow: auto;
+    }
+    .Header .home-2 .text-middle {
+        text-align: center;
+    }
+}
+@media screen and (min-width:992px) {
+    .Header .second {
+        transform: translateY(20px);
+        transition: .4s;
+        z-index: 2;
+    }
+    .Header .first li:hover .second {
+        transform: translateY(0px);
+        transition: .4s;
+    }
+    .Header .position-change {
+        position: absolute;
+    }
+    .Header .second {
+        border-radius: 5px;
+    }
+    .Header .second li {
+        display: none !important;
+    }
+    .Header .first li:hover .second li {
+        display: block !important;
+    }
+    .Header .first li:hover i {
+        color: var(--thempurpal);
+        transition: .4s;
+    }
+    .Header .home-2 .text-middle {
+        text-align: start;
+    }
+}
+.Header a,
+.Header .icon {
+    cursor: pointer;
+}
+.Header .Slider,
+.Header .Slider .owl-carousel,
+.Header .Slider .owl-stage-outer,
+.Header .Slider .owl-stage,
+.Header .Slider .owl-item,
+.Header .Slider .item,
+.Header .Slider img {
+    height: 100vh;
+}
+.Header .Slider .owl-carousel {
+    position: relative;
+}
+.Header .Slider .owl-nav {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.Header .Slider .owl-nav .owl-prev,
+.Header .Slider .owl-nav .owl-next {
+    margin: 0px 50px;
+    padding: 15px 23px !important;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(256, 256, 256, .2) !important;
+}
+.Header .Slider .owl-item::after,
+.Header .other-header::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.Header .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+#skicky-header {
+    transition: .5s;
+    z-index: 2;
+}
+.Header .other-header .position-absolute {
+    z-index: 1;
+}
+.Header .other-header img {
+    height: 75vh;
+    position: relative;
+}
+.Header .other-header .fa-circle {
+    scale: .4;
+}
+.Header .other-header a {
+    color: #fff;
+    transition: .4s;
+}
+/* 
+=================================================================================
+                            Home - 1 - Header - End
+=================================================================================
+*/
+/* 
+=================================================================================
+                            Home - 2 - Header - Start
+=================================================================================
+*/
+.Header .home-2 {
+    background: linear-gradient(#360D71, #005EAF, #63CDF2);
+    height: 800px;
+    z-index: 0;
+}
+.Header .home-2 .btn-services a {
+    background-color: #fff;
+    color: var(--thempurpal);
+    transition: .4s;
+    z-index: 0;
+}
+.Header .home-2 .btn-services a::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--themdarkblue);
+    z-index: -1;
+    transition: .4s;
+}
+.Header .home-2 .btn-contact-us a {
+    background-color: var(--themdarkblue);
+    color: #fff;
+    transition: .4s;
+    z-index: 0;
+}
+.Header .home-2 .btn-contact-us a::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: -1;
+    transition: .4s;
+}
+.Header .home-2 .img {
+    bottom: -2px;
+    z-index: -1;
+}
+/* 
+=================================================================================
+                            Home - 2 - Header - End
+=================================================================================
+*/

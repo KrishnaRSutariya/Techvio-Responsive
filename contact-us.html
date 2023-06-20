@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FaviCon Icons -->
+    <link rel="shortcut icon" href="Image/favicon.png" type="image/x-icon" />
+
+    <title>Techvio - IT Solutions & Business Services Website Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Dosis:wght@300&display=swap" rel="stylesheet"> -->
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Dosis:wght@300&display=swap');
+    </style> -->
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap");
+    </style>
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" href="CSS/animate.min.css" />
+    <link rel="stylesheet" href="CSS/animate.css" />
+
+    <!-- Font Awarsome For Fonts -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+
+    <!-- BootStrap Style-Sheet -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
+    <!-- Owl Carousel Slider -->
+    <link rel="stylesheet" href="CSS/owl.carousel.min.css" />
+    <link rel="stylesheet" href="CSS/owl.theme.default.min.css" />
+
+    <!-- Style File -->
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+    <!-- Start Preloader Area -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <!-- End Preloader Area -->
+
+    <!-- Start Go Top Section -->
+    <div class="go-top">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- End Go Top Section -->
+
+    <!-- Other-Page - Header - Start -->
+    <div class="Header position-relative">
+        <div class="position-absolute top-0 start-0 w-100" id="skicky-header">
+            <div class="container py-sm-3 py-0">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-lg-2 col-md-4 col-6 d-flex justify-content-start align-items-center">
+                        <a href="./index.html" id="img-light">
+                            <img src="./Image/Home1/asset 0.png" alt="" />
+                        </a>
+                        <a href="./index.html" class="d-none" id="img-dark">
+                            <img src="./Image/Home1/asset 1.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="col-lg-auto col-6 px-0 d-flex justify-content-end pe-4">
+                        <div class="icon d-lg-none d-flex align-items-center fs-4 position-relative">
+                            <i class="fa-solid fa-bars" onclick="open_close_menu(this.id)" id="open"></i>
+                            <i class="fa-solid fa-xmark position-absolute top-50 start-50 translate-middle pe-2"
+                                onclick="open_close_menu(this.id)" id="close"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-auto col-12 px-0 mt-2">
+                        <ul class="first d-lg-flex h-100 justify-content-center ps-0 d-none my-0" id="menu">
+                            <li class="position-relative first-li-1" onclick="open_close_second_menu(1)">
+                                <a class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3 justify-content-between">
+                                        <div>Home</div>
+                                        <div>
+                                            <div class="d-lg-block d-none ms-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="d-lg-none d-block px-2">
+                                                <i class="fa-solid fa-plus" id="plus-1"></i>
+                                                <i class="fa-solid fa-minus d-none" id="minus-1"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="second position-change top-100 start-0 ps-0 shadow bg-white overflow-hidden">
+                                    <li class="border second-li-1">
+                                        <a href="./index.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Home 1
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-1">
+                                        <a href="index-2.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Home 2
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="./about-us.html" class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3">
+                                        About Us
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="position-relative first-li-2" onclick="open_close_second_menu(2)">
+                                <a class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3 justify-content-between">
+                                        <div>Services</div>
+                                        <div>
+                                            <div class="d-lg-block d-none ms-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="d-lg-none d-block px-2">
+                                                <i class="fa-solid fa-plus" id="plus-2"></i>
+                                                <i class="fa-solid fa-minus d-none" id="minus-2"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="second position-change top-100 start-0 ps-0 shadow bg-white overflow-hidden">
+                                    <li class="border second-li-2">
+                                        <a href="./services.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Services
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-2">
+                                        <a href="./services-details.html"
+                                            class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Services Details
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="position-relative first-li-3" onclick="open_close_second_menu(3)">
+                                <a class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3 justify-content-between">
+                                        <div>Projects</div>
+                                        <div>
+                                            <div class="d-lg-block d-none ms-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="d-lg-none d-block px-2">
+                                                <i class="fa-solid fa-plus" id="plus-3"></i>
+                                                <i class="fa-solid fa-minus d-none" id="minus-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="second position-change top-100 start-0 ps-0 shadow bg-white overflow-hidden">
+                                    <li class="border second-li-3">
+                                        <a href="./projects.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Projects
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-3">
+                                        <a href="./projects-details.html"
+                                            class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Projects Details
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="position-relative first-li-4" onclick="open_close_second_menu(4)">
+                                <a class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3 justify-content-between">
+                                        <div>Pages</div>
+                                        <div>
+                                            <div class="d-lg-block d-none ms-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="d-lg-none d-block px-2">
+                                                <i class="fa-solid fa-plus" id="plus-4"></i>
+                                                <i class="fa-solid fa-minus d-none" id="minus-4"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="second position-change top-100 start-0 ps-0 shadow bg-white overflow-hidden">
+                                    <li class="border second-li-4">
+                                        <a href="./about-us.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                About Us
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./team.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Team
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./pricing.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Pricing
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./error-404.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                404 Error
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./faq.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                FAQ
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./comming-soon.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Comming Soon
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./terms&conditions.html"
+                                            class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Terms & Conditions
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-4">
+                                        <a href="./privacy-policy.html"
+                                            class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Privacy Policy
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="position-relative first-li-5" onclick="open_close_second_menu(5)">
+                                <a class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3 justify-content-between">
+                                        <div>Blog</div>
+                                        <div>
+                                            <div class="d-lg-block d-none ms-1">
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="d-lg-none d-block px-2">
+                                                <i class="fa-solid fa-plus" id="plus-5"></i>
+                                                <i class="fa-solid fa-minus d-none" id="minus-5"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <ul class="second position-change top-100 start-0 ps-0 shadow bg-white overflow-hidden">
+                                    <li class="border second-li-5">
+                                        <a href="./blog-grid.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Blog Grid
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-5">
+                                        <a href="./blog-right-slidebar.html"
+                                            class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Blog Right Sidebar
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="border second-li-5">
+                                        <a href="./blog-details.html" class="d-block fw-bold fs-6 px-3 py-2 me-5 w-100">
+                                            <div class="d-flex align-items-center pe-5 me-5 w-100 ps-lg-0 ps-4">
+                                                Blog Details
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="./contact-us.html" class="d-block fw-bold fs-6 px-3 h-100">
+                                    <div class="d-flex align-items-center h-100 py-lg-0 py-3 font-purpul">
+                                        Contact
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col px-0 d-lg-block d-none py-2">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="btn-contact d-flex justify-content-end">
+                                <a href="./contact-us.html"
+                                    class="px-5 py-3 fw-bold rounded text-white overflow-hidden">Get It Support</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-hidden">
+            <div class="other-header position-relative text-white">
+                <img src="./Image/Contect/asset 34.jpeg" alt="" />
+                <div class="position-absolute top-0 left-0 w-100 h-100">
+                    <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+                        <div class="h1 fw-bold font-dosis">Contact</div>
+                        <div class="h5 font-dosis d-flex justify-content-center">
+                            <a href="./index.html">Home</a>
+                            <i class="fa-solid fa-circle font-purpul mx-2"></i>
+                            <div>Contact</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Other-Page - Header - End -->
+
+    <!-- CONTACTINFORMATION - Start -->
+    <div class="CONTACTINFORMATION bg-white py-md-5">
+        <div class="container py-4">
+            <div class="heading-text">
+                <div class="h6 fw-bold text-center font-orange">CONTACT INFORMATION</div>
+                <div class="h1 text-center font-dosis font-dark-blue fw-bolder">
+                    Find Us
+                </div>
+            </div>
+            <div class="row pt-5 mx-0 d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12 py-3">
+                    <div class="card py-5 px-3 text-center shadow h-100">
+                        <div class="h5 fw-bold font-dosis">USA Headquarter</div>
+                        <div class="text-secondary">
+                            304 NW St Homestead, Florida, Melrose Street, Water Mill, 76B Overlook Drive Chester, PA
+                            19013,
+                            Flemingsburg USA.
+                        </div>
+                        <div class="py-1 mt-3">
+                            <a href="#" class="d-block fs-6 fw-bold">080 707 555-321</a>
+                        </div>
+                        <div class="">
+                            <a href="#" class="d-block fs-6 fw-bold">demo@example.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 py-3">
+                    <div class="card py-5 px-3 text-center shadow h-100">
+                        <div class="h5 fw-bold font-dosis">New York Office</div>
+                        <div class="text-secondary">
+                            1540 Pecks Ridge Tilton Rd Flemingsburg, Kentucky(KY), 4104188 Fulton Street Blackwood, NJ
+                            08012, London.
+                        </div>
+                        <div class="py-1 mt-3">
+                            <a href="#" class="d-block fs-6 fw-bold">080 707 555-321</a>
+                        </div>
+                        <div class="">
+                            <a href="#" class="d-block fs-6 fw-bold">demo@example.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 py-3">
+                    <div class="card py-5 px-3 text-center shadow h-100">
+                        <div class="h5 fw-bold font-dosis">Panama Office</div>
+                        <div class="text-secondary">
+                            103 Richard Ave Ashville, Ohio, Water Mill,3468 16th Hwy Pangburn, Arkansas(AR), Charolais
+                            Ashville, Virginia, Panama.
+                        </div>
+                        <div class="py-1 mt-3">
+                            <a href="#" class="d-block fs-6 fw-bold">080 707 555-321</a>
+                        </div>
+                        <div class="">
+                            <a href="#" class="d-block fs-6 fw-bold">demo@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACTINFORMATION - End -->
+
+    <!-- CONTACTUS - Start -->
+    <div class="CONTACTUS bg-primary bg-opacity-10 py-md-5">
+        <div class="container py-4">
+            <div class="heading-text">
+                <div class="h6 fw-bold text-center font-orange">CONTACT US</div>
+                <div class="h1 text-center font-dosis font-dark-blue fw-bolder">
+                    Let's Talk
+                </div>
+            </div>
+            <div class="row pt-5 mx-0 d-flex justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <form action="#">
+                        <div class="row mx-0">
+                            <div class="col-sm-6 col-12 p-3">
+                                <input type="text" class="py-3 px-3 border-0 w-100 rounded" required
+                                    placeholder="Your Name">
+                            </div>
+                            <div class="col-sm-6 col-12 p-3">
+                                <input type="email" class="py-3 px-3 border-0 w-100 rounded" required
+                                    placeholder="Your Email">
+                            </div>
+                            <div class="col-sm-6 col-12 p-3">
+                                <input type="text" class="py-3 px-3 border-0 w-100 rounded" required
+                                    placeholder="Your Phone">
+                            </div>
+                            <div class="col-sm-6 col-12 p-3">
+                                <input type="text" class="py-3 px-3 border-0 w-100 rounded" required
+                                    placeholder="Your Subject">
+                            </div>
+                            <div class="col-12 p-3">
+                                <textarea name="" id="" class="w-100 py-3 px-3 border-0 rounded" cols="30" rows="6"
+                                    required placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <input type="submit"
+                                        class="btn-send px-5 py-3 d-block fw-bold rounded text-white overflow-hidden border-0"
+                                        value="Send Message">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACTUS - End -->
+
+    <!-- GoogleMap - Start -->
+    <div class="google-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12101.225490913977!2d-74.05098987655128!3d40.689249703014056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1687017034926!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
+    </div>
+    <!-- GoogleMap - End -->
+
+    <!-- Footer - Start -->
+    <footer>
+        <div class="bg-dark py-md-5 py-3 text-white border border-1 border-start-0 border-end-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="h4 font-dosis fw-bolder">Sign Up Our Newsletter</div>
+                        <div>
+                            We Offer An Informative Monthly Technology Newsletter - Check It
+                            Out.
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-6 col-12 d-flex align-items-center justify-content-md-center justify-content-start">
+                        <div class="input-type rounded overflow-hidden position-relative">
+                            <form class="h-100">
+                                <input type="email" placeholder="Enter your email"
+                                    class="w-100 h-100 px-sm-4 px-2 border-0 py-md-0 py-3" required />
+                                <input type="submit" value="Subscribe Now"
+                                    class="h-100 position-absolute top-0 end-0 px-sm-4 px-2 border-0 text-white" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark py-md-5 py-3 text-white border border-1 border-start-0 border-end-0">
+            <div class="container py-md-4 py-2">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="font-dosis fw-bold fs-5 py-2 border-bottom">
+                            About Us
+                        </div>
+                        <div class="py-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco
+                            consectetur laboris.
+                        </div>
+                        <div class="social-icon fs-5 py-2">
+                            <a href="./contact-us.html" class="rounded-circle mx-1 px-2"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="./contact-us.html" class="rounded-circle mx-1 px-2"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="./contact-us.html" class="rounded-circle mx-1 px-2"><i
+                                    class="fa-brands fa-pinterest"></i></a>
+                            <a href="./contact-us.html" class="rounded-circle mx-1 px-2"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-12">
+                        <div class="font-dosis fw-bold fs-5 py-2 border-bottom">
+                            Our Services
+                        </div>
+                        <div class="py-3">
+                            <div class="pb-2">
+                                <a href="./services-details.html">IT Solution</a>
+                            </div>
+                            <div class="py-2">
+                                <a href="./services-details.html">Web Development</a>
+                            </div>
+                            <div class="py-2">
+                                <a href="./services-details.html">Networking Services</a>
+                            </div>
+                            <div class="py-2">
+                                <a href="./services-details.html">SEO Optimization</a>
+                            </div>
+                            <div class="pt-2">
+                                <a href="./services-details.html">App Optimization</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-sm-6 col-12">
+                        <div class="font-dosis fw-bold fs-5 py-2 border-bottom">
+                            Useful Links
+                        </div>
+                        <div class="py-3">
+                            <div class="pb-2"><a href="./about-us.html">About Us</a></div>
+                            <div class="py-2">
+                                <a href="./services-details.html">Case Study</a>
+                            </div>
+                            <div class="py-2">
+                                <a href="./contact-us.html">Contact Us</a>
+                            </div>
+                            <div class="py-2">
+                                <a href="./privacy-policy.html">Privacy Policy</a>
+                            </div>
+                            <div class="pt-2">
+                                <a href="./terms&conditions.html">Terms & Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-12">
+                        <div class="font-dosis fw-bold fs-5 py-2 border-bottom">
+                            Contact Info
+                        </div>
+                        <div class="py-3">
+                            <div class="row mx-0">
+                                <div class="col-auto">
+                                    <i class="fa-solid fa-phone fs-4"></i>
+                                </div>
+                                <div class="col">
+                                    <div class="fw-bold">Phone</div>
+                                    <a href="./contact-us.html">080 707 555-321</a>
+                                </div>
+                            </div>
+                            <div class="row mx-0 py-3">
+                                <div class="col-auto">
+                                    <i class="fa-solid fa-envelope fs-4"></i>
+                                </div>
+                                <div class="col">
+                                    <div class="fw-bold">Email</div>
+                                    <a href="./contact-us.html">demo@example.com</a>
+                                </div>
+                            </div>
+                            <div class="row mx-0">
+                                <div class="col-auto">
+                                    <i class="fa-solid fa-location-dot fs-4"></i>
+                                </div>
+                                <div class="col">
+                                    <div class="fw-bold">Address</div>
+                                    <div>526 Melrose Street, Water Mill, 11976 New York</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-dark py-md-4 py-3 text-white border border-1 border-start-0 border-end-0">
+            <div class="container py-md-3 py-2">
+                <div class="row">
+                    <div class="col-md-6 col-12 text-md-start text-center">
+                        © 2021 Techvio - All Rights Reserved.
+                    </div>
+                    <div class="col-md-6 col-12 text-md-end text-center">
+                        <a href="./terms&conditions.html">Terms & Conditions</a>
+                        <span class="px-2">|</span>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer - End -->
+
+    <!-- J-Query File -->
+    <script src="JS/jquery-3.6.1.min.js"></script>
+
+    <!-- BootStrap Script -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+
+    <!-- For The Slider -->
+    <script src="JS/owl.carousel.min.js"></script>
+
+    <!-- Script File -->
+    <script src="JS/script.js"></script>
+    <script src="JS/script_js.js"></script>
+</body>
+
+</html>
